@@ -24,11 +24,19 @@ void exo1()
 	}
 }
 
-void exo2(int& a, int& b)
+void exo2(int &a, int &b)
 {
 	int c=a;
 	a=b;
 	b=c;
+}
+
+//void tableauEcriture(int t)
+
+
+void exo3()
+{
+
 }
 
 int main(int argc, char const *argv[])
@@ -40,6 +48,8 @@ int main(int argc, char const *argv[])
 	cout<<a<<" "<<b<<endl;
 	exo2(a,b);
 	cout<<a<<" "<<b<<endl;
+
+	exo3();
 
 
 
