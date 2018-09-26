@@ -49,8 +49,6 @@ CString::CString(char c)
 
 
 
-
-
 // Fonctions
 
 void exo1()
