@@ -9,6 +9,10 @@ class Point
 		Point(int x, int y);
 	
 		Point(const Point &p);
+
+		int getX();
+
+		int getY();
 	
 		void afficher();
 		

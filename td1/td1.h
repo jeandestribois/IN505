@@ -5,3 +5,5 @@ void exo2(int &a, int &b);
 void exo3();
 
 void exo4();
+
+void exo5();

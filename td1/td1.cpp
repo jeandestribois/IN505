@@ -3,53 +3,8 @@ using namespace std;
 #include <iostream>
 #include <string.h>
 #include "Point.h"
-#include "CString.h"
-
-// Classe Point
-
-Point::Point() 
-{
-	this->x=10;
-	this->y=10;
-}
-Point::Point(int x, int y)
-{
-	this->x=x;
-	this->y=y;
-}
-Point::Point(const Point &p)
-{
-	this->x=p.x;
-	this->y=p.y;
-}
-void Point::afficher()
-{
-	cout<<"P.x = "<<this->x<<endl<<"P.y = "<<this->y<<endl;
-}
-Point Point::cloner(const Point &p)
-{
-	this->x=p.x;
-	this->y=p.y;
-}
-Point::~Point()
-{
-	cout<<"Appel au destructeur"<<endl;
-}
-
-//Classe CString
-
-CString::CString()
-{
-	
-}
-CString::CString(char c)
-{
-	
-}
-
-
-
-// Fonctions
+#include "Segment.h"
+//#include "CString.h"
 
 void exo1()
 {
@@ -97,10 +52,20 @@ void exo3()
 
 void exo4()
 {
-	//Point p1();
+	Point p1;
 	Point p2(3,4);
 	Point p3(p2);
-	//p1.afficher();
+	p1.afficher();
 	p2.afficher();
 	p3.afficher();
+	p3.cloner(p1);
+	p3.afficher();
+}
+
+void exo5()
+{
+	Segment s1;
+	Segment s2(s1);
+	s1.afficher();
+	s2.afficher();
 }

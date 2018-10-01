@@ -18,5 +18,7 @@ int main(int argc, char const *argv[])
 
 	exo4();
 
+	exo5();
+
 	exit(0);
 }
