@@ -7,3 +7,5 @@ void exo3();
 void exo4();
 
 void exo5();
+
+void exo6();

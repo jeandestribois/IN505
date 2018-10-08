@@ -1,5 +1,5 @@
-#include <stdio.h>
 using namespace std;
+#include <stdio.h>
 #include <iostream>
 #include "td1.h"
 
@@ -19,6 +19,8 @@ int main(int argc, char const *argv[])
 	exo4();
 
 	exo5();
+
+	exo6();
 
 	exit(0);
 }

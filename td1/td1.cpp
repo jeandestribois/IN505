@@ -1,17 +1,16 @@
-#include <stdio.h>
 using namespace std;
+#include <stdio.h>
 #include <iostream>
 #include <string.h>
 #include "Point.h"
 #include "Segment.h"
-//#include "CString.h"
+#include "CString.h"
 
 void exo1()
 {
 	int t[10];
 	int *p=t;
 	for(int i=0; i<10; i++) t[i]=i+1, cout<<p[i]<<endl;
-
 	char *tab[3];
 	tab[0]=new char[strlen("truc")+1];
 	strcpy(tab[0],"truc");
@@ -68,4 +67,17 @@ void exo5()
 	Segment s2(s1);
 	s1.afficher();
 	s2.afficher();
+}
+
+void exo6()
+{
+	CString s1;
+	CString s2('q');
+	CString s3("toto");
+	cout<<"s1 : "<<s1.getString()<<endl<<"s2 : "<<s2.getString()<<endl<<"s3 : "<<s3.getString()<<endl;
+	cout<<"nbrChaines : "<<CString::nbrChaines<<endl;
+	s3=s2;
+	s3.plus('w');
+	cout<<"s3 : "<<s3.getString()<<endl ;
+	cout<<"s1>s2 ? : "<<s1.plusGrandQue(s2)<<endl;
 }
