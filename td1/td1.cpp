@@ -5,6 +5,7 @@ using namespace std;
 #include "Point.h"
 #include "Segment.h"
 #include "CString.h"
+#include "Definition.h"
 
 void exo1()
 {
@@ -80,4 +81,10 @@ void exo6()
 	s3.plus('w');
 	cout<<"s3 : "<<s3.getString()<<endl ;
 	cout<<"s1>s2 ? : "<<s1.plusGrandQue(s2)<<endl;
+}
+
+void exo7()
+{
+	Definition homer("Homer","Buveur de biere");
+	cout<<"la definition du mot "<<homer.getClef()<<" est "<<homer.getDef()<<endl;
 }

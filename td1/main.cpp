@@ -22,5 +22,7 @@ int main(int argc, char const *argv[])
 
 	exo6();
 
+	exo7();
+
 	exit(0);
 }

@@ -1,7 +1,7 @@
 using namespace std;
 #include <stdio.h>
-#include <string.h>
 #include <iostream>
+#include <string.h>
 #include "CString.h"
 
 int CString::nbrChaines=0;
