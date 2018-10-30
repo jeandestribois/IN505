@@ -1,3 +1,6 @@
+#ifndef SEGMENT_H
+#define SEGMENT_H
+
 class Segment
 {
 	private:
@@ -10,7 +13,9 @@ class Segment
 
 		Segment(const Segment &s);
 
-		void afficher();
+		void afficher() const;
 
 		~Segment(); 
 };
+
+#endif

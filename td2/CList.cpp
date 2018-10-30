@@ -88,11 +88,15 @@ ostream& operator<<(ostream &flux, const CList &c)
 	struct list *tmp=c.l;
 	for(int i=0; i<c.taille; i++)
 	{
-		flux<<"c[i] = "<<tmp->val<<endl;
+		flux<<tmp->val<<", ";
 		tmp=tmp->suiv;
 	}
 	return flux;
 }
+
+void CList::operator<(int) {cout<<"Je ne sais pas quoi faire pour l'operateur < pour la classe CLIST"<<endl;}
+
+int CList::operator>(int) {cout<<"Je ne sais pas quoi faire pour l'operateur > pour la classe CLIST"<<endl;}
 
 CList::~CList()
 {

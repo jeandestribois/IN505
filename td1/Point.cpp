@@ -17,17 +17,27 @@ Point::Point(const Point &p)
 	this->x=p.x;
 	this->y=p.y;
 }
-int Point::getX()
+int Point::getX() const
 {
 	return this->x;
 }
-int Point::getY()
+int Point::getY() const
 {
 	return this->y;
 }
-void Point::afficher()
+void Point::afficher() const
 {
 	cout<<"P.x = "<<this->x<<endl<<"P.y = "<<this->y<<endl;
+}
+void Point::operator=(const Point &p)
+{
+	this->x=p.getX();
+	this->y=p.getY();
+}
+ostream& operator<<(ostream &flux, const Point &p)
+{
+	flux<<"x = "<<p.getX()<<" et y = "<<p.getY();
+	return flux;
 }
 Point Point::cloner(const Point &p)
 {

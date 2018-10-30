@@ -1,6 +1,9 @@
+#ifndef POINT_H
+#define POINT_H
+
 class Point
 {
-	private:
+	protected:
 		int x, y;
 		
 	public:
@@ -10,13 +13,19 @@ class Point
 	
 		Point(const Point &p);
 
-		int getX();
+		int getX() const;
 
-		int getY();
+		int getY() const;
 	
-		void afficher();
+		void afficher() const;
+
+		void operator=(const Point &p);
+
+		friend ostream& operator<<(ostream &flux, const Point &p);
 		
 		Point cloner(const Point &p);
 
 		~Point();
 };
+
+#endif

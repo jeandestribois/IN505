@@ -14,7 +14,7 @@ Segment::Segment(const Segment &s)
 	this->p1=s.p1;
 	this->p2=s.p2;
 }
-void Segment::afficher()
+void Segment::afficher() const
 {
 	cout<<"P1: "<<this->p1.getX()<<" "<<this->p1.getY()<<endl<<"P2: "<<this->p2.getX()<<" "<<this->p2.getY()<<endl;
 }
