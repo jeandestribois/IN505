@@ -1,7 +1,7 @@
 #ifndef FORME_H
 #define FORME_H
 
-#include "../td1/Point.h"
+#include "Point.h"
 
 class Forme
 {

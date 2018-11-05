@@ -1,7 +1,7 @@
 #ifndef POINTCOLOR_H
 #define POINTCOLOR_H
 
-#include "../td1/Point.h"
+#include "Point.h"
 
 class PointColor:public Point
 {	

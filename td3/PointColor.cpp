@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string.h>
 using namespace  std;
-#include "../td1/Point.h"
+#include "Point.h"
 #include "PointColor.h"
 
 PointColor::PointColor()
@@ -38,5 +38,5 @@ void PointColor::afficher() const
 
 PointColor::~PointColor()
 {
-	cout<<"Appel au destructeur de PointColor"<<endl;
+	//cout<<"Appel au destructeur de PointColor"<<endl;
 }

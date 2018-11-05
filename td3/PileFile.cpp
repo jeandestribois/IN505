@@ -1,7 +1,7 @@
 using namespace std;
 #include <stdlib.h>
 #include <iostream>
-#include "../td2/CList.h"
+#include "CList.h"
 #include "PileFile.h"
 
 void CPile::operator<(int i)
@@ -14,7 +14,7 @@ void CPile::operator<(int i)
 	this->taille++;
 }
 
-int CPile::operator>(int i)
+int CPile::operator>(int &i)
 {
 	if(this->l==NULL) return -1;
 	else
@@ -51,7 +51,7 @@ void CFile::operator<(int i)
 	}
 }
 
-int CFile::operator>(int i)
+int CFile::operator>(int &i)
 {
 	if(this->l==NULL) return -1;
 	else

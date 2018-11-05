@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string.h>
 using namespace  std;
-#include "../td1/Point.h"
+#include "Point.h"
 #include "Forme.h"
 
 
@@ -15,7 +15,7 @@ void Forme::deplacer(int, int) const
 {
 	cout<<"\nJe ne sais pas deplacer cette forme"<<endl;
 }
-Forme::~Forme() {cout<<"Appel au destructeur de Forme"<<endl;}
+Forme::~Forme() {/*cout<<"Appel au destructeur de Forme"<<endl;*/}
 
 
 /* Classe TRIANGLE */
@@ -34,7 +34,7 @@ void Triangle::deplacer(int dx, int dy) const
 {
 	cout<<"\nDéplacement de TRIANGLE en x de : "<<dx<<" et en y de : "<<dx<<endl;
 }
-Triangle::~Triangle() {cout<<"Appel au destructeur de Forme"<<endl;}
+Triangle::~Triangle() {/*cout<<"Appel au destructeur de Forme"<<endl;*/}
 
 
 /* Classe RECTANGLE */
@@ -52,7 +52,7 @@ void Rectangle::deplacer(int dx, int dy) const
 {
 	cout<<"\nDéplacement de RECTANGLE en x de : "<<dx<<" et en y de : "<<dx<<endl;
 }
-Rectangle::~Rectangle() {cout<<"Appel au destructeur de Forme"<<endl;}
+Rectangle::~Rectangle() {/*cout<<"Appel au destructeur de Forme"<<endl;*/}
 
 
 /* Classe CERCLE */
@@ -69,4 +69,4 @@ void Cercle::deplacer(int dx, int dy) const
 {
 	cout<<"\nDéplacement de CERCLE en x de : "<<dx<<" et en y de : "<<dx<<endl;
 }
-Cercle::~Cercle() {cout<<"Appel au destructeur de Forme"<<endl;}
+Cercle::~Cercle() {/*cout<<"Appel au destructeur de Forme"<<endl;*/}
