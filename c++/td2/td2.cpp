@@ -25,7 +25,7 @@ void exo3()
 	CList c2(20);
 	for(int i=0; i<c1.getTaille(); i++) c1[i]=3;
 	for(int i=0; i<c2.getTaille(); i++) c2[i]=3;
-	cout<<c1<<c2;
+	cout<<c1<<c2<<endl;
 }
 
 
